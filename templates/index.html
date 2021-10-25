@@ -1,0 +1,506 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Responsive Bootstrap 3 Startup and Multipurpose Template">
+    <meta name="keywords" content="LOKI, Startup, Multipurpose, Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="author" content="Md Shuhel Hossain">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- SITE TITLE -->
+    <title>Care for the children</title>
+
+    <!-- =========================
+     FAV AND TOUCH ICONS AND FONT  
+    ============================== -->
+    <link rel="icon" href="{% static 'images/fav.png'%}">
+
+    <!-- =========================
+     STYLESHEETS   
+    ============================== -->
+    <!-- BOOTSTRAP AND ANIMATION -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+
+    <!-- LIGHTBOX -->
+    <link rel="stylesheet" href="{% static 'css/fresco/fresco.css'%}">
+
+    <!-- CUSTOM STYLESHEETS -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css'%}">
+
+    <!-- sort/filter -->
+    <link rel="stylesheet" href="{% static 'css/layout.css'%}">
+
+
+
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .standard-button,
+        .navbar-register-button {
+       filter: none;
+        }
+      </style>
+    <![endif]-->
+
+
+</head>
+
+<body>
+    <!-- =========================
+                HEADER   
+    ============================== -->
+    <div class="section" id="home">
+        <header class="navbar navbar-customs">
+            <div class="container-fluid">
+                <div class="navbar-header navbar-left">
+
+                    <!-- RESPONSIVE MENU BUTTON -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- HEADER LOGO -->
+                    <a class="navbar-brand wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s" href="#">         </a>
+
+                </div>
+
+                <nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
+
+                    <!-- NAVIGATION LINKS -->
+                    <ul id="header-nav" class="nav navbar-nav">
+
+                        <li><a href="#">HOME</a>
+                        </li>
+                        <li><a href="#">ABOUT</a>
+                        </li>
+                        <li><a href="#">SERVICES</a>
+                        </li>
+                       
+                        <li><a href="#">WORKS</a>
+                        </li>
+                
+                        <li class="nav-contact"><a href="#">CONTACT</a>
+                        </li>
+
+                        <li class="nav-icon"><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-icon"><a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li class="nav-icon"><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+
+
+
+                        <!-- HEADER ACTION BUTTON -->
+                        <li class="header-login-button">
+                            
+                            <!-- <form action="donate" method="get">
+                                {% csrf_token %}
+    
+                                <input class="btn nav-button" type="submit" value="Donate" name="donate">
+                                                                
+                            </form> -->
+                            
+                            <a href="{% static 'index1.html' %}" class="btn nav-button" id="pay-btn">DONATE</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </header>
+        <div class="container">
+
+            <div class="loki-content">
+
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+
+                        <div class="loki-heading" data-animation="fadeIn">
+                            <h4 class="loki-welcome-text wow fadeIn animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">Fight against hunger</h4>
+
+                            <h1 class="loki-title wow fadeIn animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">HELP THE CHILDREN</h1>
+                        </div>
+
+                        <p class="loki-buttons">
+                            <form action="donate" method="get">
+                                {% csrf_token %}
+    
+                                <button id="pay-btn" class="btn button wow flash animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s" type="submit" name="donate">DONATE</button>
+                                                                
+                            </form>
+                            <!-- <a href="#" id="pay-btn" class="btn button wow flash animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">DONATE</a> -->
+
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="hire-img-item wow fadeInRight animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                <a href="{% static 'images/header-1.jfif'%}" class="fresco" data-fresco-group="example"><img src="{% static 'images/header-1.jfif'%}" alt="header image">
+                </a>
+                <a href="{% static 'images/header-2.jpg'%}" class="fresco" data-fresco-group="example"><img src="{% static 'images/header-2.jpg'%}" alt="header image">
+                </a>
+                <a href="{% static 'images/header-3.jfif'%}" class="fresco" data-fresco-group="example"><img src="{% static 'images/header-3.jfif'%}" alt="header image">
+                </a>
+                
+                
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- end section -->
+
+    <!-- =========================
+                SECTION: HIRE   
+    ============================== -->
+    <div class="section" id="loki-hire">
+        <div class="container">
+
+            <div class="hire-title wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                <h1 class="asd wow fadeInRight animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">ABOUT US</h1>
+                <p class="hire-tagline">We care for the children, Join us .. </p>
+                <hr class="hire-line">
+                <!-- <div class="hire-icon wow flash animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                    <img src="images/process-1.png" alt="hire icon">
+                    <img src="images/process.png" alt="hire icon">
+                    <img src="images/process-2.png" alt="hire icon">
+                    <img src="images/process.png" alt="hire icon">
+                    <img src="images/process-3.png" alt="hire icon">
+                </div> -->
+                <div class="hire-contant wow fadeInUp animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                    <p>Care For Children is a non-profit organization. We raise funds to provide daily meals to poor children. 
+                        We also have accomodation facilities and are expanding more across the country. Our next goal is to support these
+                    children for their basic education. </p>
+
+                    <input type="button" value="LEARN MORE">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+    <!-- =========================
+        SECTION: OUR-SERVICES 
+    ============================== -->
+    <div class="section" id="process">
+        <div class="container">
+            <div class="process-titel">
+                <h1>Services</h1>
+                <p>know how we care about the children</p>
+                <hr class="process-line">
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                    <img src="{%static 'images/process-phone.jpg'%}" alt="image">
+                </div>
+                <div class="col-md-6 wow fadeInRight animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                    <div class="process-title1">
+                    <div class="process-content text-left">
+                        <h3>WE PLAN</h3>
+                        <p>We have arranged daily meals across all our bootcamps and centers for the needy and poor children.</p>
+                    </div>
+                    </div>
+                    <div class="process-title2">
+                        <div class="process-content text-left">
+                            <h3>WE BUILD</h3>
+                            <p>We have built 30+ infrastructure projects for these children including 4 schools, 7 orphanages, 16 residential buildings supporting 2000+ children and poor people and also maintain 300+ 
+                                bootcamps which serve food to 10000+ children, thanks to the support of individual donors and sponsor institutions. </p>
+                        </div>
+                    </div>
+                    <div class="process-title3">
+                        <div class="process-content text-left">
+                            <h3>WE PROMOTE</h3>
+                            <p>We make sure that all our children receive the best education and also learning expenses of books, stationary, school uniforms are taken care off.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+    
+    <!-- =========================
+      SECTION: SERVICES NEWSLETTER  
+    ============================== -->
+    <div class="section" id="newsletter">
+        <div class="container">
+            <div class="main-content wow fadeIn animated">
+                <h1>JOIN THE CAUSE</h1>
+                <hr class="services-lines">
+                <div class="col-md-8 col-md-offset-2">
+                <p>Do your part, each contribution matters to us... You can either donate or can adopt a child and make her future. </p>
+                
+                <a href=""><img src="{% static 'images/go.png'%}" alt="go">
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                   
+                
+    
+    <!-- =========================
+            SECTION: PORTFOLIO  
+    ============================== -->
+    <div class="section" id="portfolio">
+        <div class="container">
+            <div class="portfolio-title wow fadeIn animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                <h1>OUR WORK</h1>
+                <p class="portfolio-tag">Some of our recent works .</p>
+                <hr class="services-line">
+                <p class="portfolio-contant">We mainly have our presence in cities like New Delhi, Ahmedabad, Pune, Mumbai, Nashik, Bangalore, Hyderabad, Chennai and Kolkata</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="portfoliolist">
+                <div class="portfolio design" data-cat="design">
+                    <div class="portfolio-wrapper wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                        <a href="images/portfolios/design/prot-5.jfif" class="fresco" data-fresco-gourp="example"><img src="images/portfolios/design/prot-5.jfif" alt="design" />
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio graphics" data-cat="graphice">
+                    <div class="portfolio-wrapper wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                        <a href="images/portfolios/graphics/prot-2.jpeg" class="fresco" data-fesco-gourp="example"><img src="images/portfolios/graphics/prot-2.jpeg" alt="graphice" />
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio games" data-cat="games">
+                    <div class="portfolio-wrapper wow fadeInRight animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                        <a href="images/portfolios/games/prot-1.jfif" class="fresco" data-fresco-gourp="example"><img src="images/portfolios/games/prot-1.jfif" alt="games" />
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio design" data-cat="design">
+                    <div class="portfolio-wrapper wow fadeInRight animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                        <a href="images/portfolios/design/prot-6.jfif" class="fresco" data-fresco-gourp="example"><img src="images/portfolios/design/prot-6.jfif" alt="design" />
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio games" data-cat="games">
+                    <div class="portfolio-wrapper wow fadeInRight animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                        <a href="{% static 'images/portfolios/games/prot-3.jpg'%}" class="fresco" data-fresco-gourp="example"><img src="{% static 'images/portfolios/games/prot-3.jpg'%}" alt="games" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="portfolio graphics" data-cat="graphice">
+                    <div class="portfolio-wrapper wow fadeInRight animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                        <a href="images/portfolios/graphics/prot-8.png" class="fresco" data-fesco-gourp="example"><img src="images/portfolios/graphics/prot-8.png" alt="graphice" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="portfolio games" data-cat="games">
+                    <div class="portfolio-wrapper wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                        <a href="images/portfolios/games/prot-7.jfif" class="fresco" data-fresco-gourp="example"><img src="images/portfolios/games/prot-7.jfif" alt="games" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="portfolio graphics" data-cat="graphice">
+                    <div class="portfolio-wrapper wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.25s">
+                        <a href="{% static 'images/portfolios/graphics/prot-4.jpg' %}" class="fresco" data-fesco-gourp="example"><img src="{% static 'images/portfolios/graphics/prot-4.jpg' %}" alt="graphice" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- =========================
+                SECTION: FOOTER   
+    ============================== -->
+    <div class="section" id="twitter">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 social">
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <div class="col-md-9 social-news">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus cumque consequuntur pariatur excepturi quisquam sed iste quisquam sed iste illum exercitationem consectetur! Eos.</p>
+                    <p class="message-http">@shuhel. <small class="date"> 17 Nov 2014 </small>http://www.templateochen/theme/loki</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================
+            GET IN TOUCH  
+    ============================== -->
+    <div class="section" id="maping">
+        <div class="get-in-touch">
+            <figure>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14485.712675466631!2d91.75994759999999!3d24.815027049999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751015bc09932a9%3A0x86da380fce6af3e4!2sBishwanath!5e0!3m2!1sen!2sbd!4v1422936834141" width="100%" height="800" frameborder="0" style="border:0"></iframe>
+                </div>
+                <figcaption>
+                    <div class="contact-form">
+                        <div class="row">
+                            <div class="col-md-3 get-forms">
+                                <div class="form-headline">
+                                    <h4>Get in touch with us!</h4>
+                                    <p class="email-1">For suport please contact us to</p>
+                                    <p class="email">shuhelbadshah@gmail.com</p>
+                                    <p class="email-2">Mobile: +8801717468501</p>
+                                    <hr>
+                                </div>
+                                <div class="visit">
+                                    <h4>Come to visit us!</h4>
+                                    <p>Street 145
+                                        <br>Mixer Company
+                                        <br> Phone : 0314-52-1378245</p>
+                                    <p>Email: mixeragency@suport.com</p>
+                                    <hr>
+                                </div>
+                                <div class="contact">
+                                    <h4>Send us a message!</h4>
+                                    <form action="" method="">
+                                        <p>
+                                            <input type="name" placeholder="Name:">
+                                        </p>
+                                        <p>
+                                            <input type="subject" placeholder="Subject:">
+                                        </p>
+                                        <p>
+                                            <textarea name="" id="message" placeholder="Message"></textarea>
+                                        </p>
+                                        <p class="send-button">
+                                            <input type="button" value="SEND MESSAGE">
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-icon">
+                                    <h2>CONTACT</h2>
+                                    <p>stay in touch with us</p>
+                                    <hr>
+                                </div>
+                                <div class="contact-social-icon">
+                                    <i class="fa fa-facebook icon-1"></i>
+                                    <i class="fa fa-twitter icon-2"></i>
+                                    <i class="fa fa-google-plus icon-3"></i>
+                                    <i class="fa fa-facebook icon-4"></i>
+                                    <i class="fa fa-skype icon-5"></i>
+                                    <i class="fa fa-youtube icon-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        
+                        <hr>
+                        <p class="last-footer"> &copy;SPARKS FOUNDATION - MADE BY  <a href="http://shivambunge.github.io">Shivam Bunge</a>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <!-- =========================
+                SCRIPTS   
+    ============================== -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/fresco/fresco.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+        document.getElementById('moar').onclick = function () {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+
+    <script>
+        $(function () {
+
+            var filterList = {
+
+                init: function () {
+
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixitup({
+                        targetSelector: '.portfolio',
+                        filterSelector: '.filter',
+                        effects: ['fade'],
+                        easing: 'snap',
+                        // call the hover effect
+                        onMixEnd: filterList.hoverEffect()
+                    });
+
+                },
+
+                hoverEffect: function () {
+
+                    // Simple parallax effect
+                    $('#portfoliolist .portfolio').hover(
+                        function () {
+                            $(this).find('.label').stop().animate({
+                                bottom: 0
+                            }, 200, 'easeOutQuad');
+                            $(this).find('img').stop().animate({
+                                top: -30
+                            }, 500, 'easeOutQuad');
+                        },
+                        function () {
+                            $(this).find('.label').stop().animate({
+                                bottom: -40
+                            }, 200, 'easeInQuad');
+                            $(this).find('img').stop().animate({
+                                top: 0
+                            }, 300, 'easeOutQuad');
+                        }
+                    );
+
+                }
+
+            };
+
+            // Run the show!
+            filterList.init();
+
+
+        });
+    </script>
+    <!-- Razorpay's Javascript code. -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{% extends "base.html"  %}
+
+{% block content %}
+<div class="col-6 pt-5  mx-auto text-center form">
+        <form action="{% url 'success' %}" method="POST" class="form-signin">
+            <img class="mb-4" src="https://upload.wikimedia.org/wikipedia/en/8/89/Razorpay_logo.svg" alt="" width="180" height="180">
+            <br>  
+            {% csrf_token %} 
+                <script
+                        src="https://checkout.razorpay.com/v1/checkout.js"
+                        data-key="rzp_test_kUTeDv08xseQlC"
+                        data-amount="{{ amount }}"
+                        data-currency="INR"
+                        data-order_id="{{ order_id }}"
+                        data-buttontext="DONATE NOW"
+                        data-name="Care for Children"
+                        data-description="{{name}}"
+                        data-image="https://upload.wikimedia.org/wikipedia/en/8/89/Razorpay_logo.svg"
+                        data-prefill.name="{{ name }}"
+                        data-prefill.email="you@example.com"
+                        data-theme.color="#F37254"
+                ></script>
+                <input type="hidden" custom="Hidden Element" name="hidden">
+                <br>
+            </form> 
+            
+
+</div>
+{% endblock %}
